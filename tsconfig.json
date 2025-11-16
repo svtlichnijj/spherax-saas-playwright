@@ -15,6 +15,7 @@
       "~src/*": ["./src/*"],
       "~api/*": ["./src/api/*"],
       "~fixtures/*": ["./src/fixtures/*"],
+      "~pages/*": ["./src/pages/*"],
       "~types/*": ["./src/types/*"]
     },
 

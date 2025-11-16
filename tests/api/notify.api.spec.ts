@@ -1,5 +1,5 @@
-import { test, expect } from '~fixtures/api-fixtures.js';
 import { faker } from '@faker-js/faker';
+import { test, expect } from '~fixtures/api-fixtures.js';
 
 test.describe('Notify Service API', () => {
   test('Get service health status', async ({ notifyService }) => {
