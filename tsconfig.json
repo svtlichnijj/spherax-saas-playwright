@@ -9,6 +9,15 @@
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
+
+    "baseUrl": ".",
+    "paths": {
+      "~src/*": ["./src/*"],
+      "~api/*": ["./src/api/*"],
+      "~fixtures/*": ["./src/fixtures/*"],
+      "~types/*": ["./src/types/*"]
+    },
+
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -16,9 +25,9 @@
     // and npm install -D @types/node
 
     // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
+    //    "sourceMap": true,
+    //    "declaration": true,
+    //    "declarationMap": true,
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
@@ -39,6 +48,6 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
+    "skipLibCheck": true
   }
 }
