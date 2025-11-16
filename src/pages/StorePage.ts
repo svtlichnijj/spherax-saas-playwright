@@ -7,7 +7,7 @@ export class StorePage extends BasePage {
   readonly cardsComponent: CardsComponent;
 
   constructor(page: Page) {
-    super(page, process.env.SPHERAX_STORE_URL || 'https://store.dev01.sphrx.xyz/');
+    super(page, process.env.SPHERAX_STORE_URL || 'https://store.dev01.sphrx.xyz');
 
     this.cardsComponent = new CardsComponent(page.locator('.MuiGrid-container'));
   }
